@@ -1,0 +1,22 @@
+{
+  "name": "multid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexisson/multid.git"
+  },
+  "keywords": [
+    "identifier"
+  ],
+  "author": "Ivan Shirokov <ivan.a.shirokov@ya.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexisson/multid/issues"
+  },
+  "homepage": "https://github.com/Alexisson/multid#readme"
+}
