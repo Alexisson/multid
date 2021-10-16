@@ -2,10 +2,10 @@ const ALPHABET_LITTLE = "abcdefghijklmnopqrstuvwxyz";
 const ALPHABET_CAPITAL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const NUMBERS = "0123456789";
 
-export const multid = (
+module.exports = function multid(
   len,
   settings = { little: true, capital: false, numbers: false }
-) => {
+) {
   let id_order = "";
   let res = "";
   if (settings.little) id_order += ALPHABET_LITTLE;
