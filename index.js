@@ -1,15 +1,15 @@
-const ALPHABET_LITTLE = "abcdefghijklmnopqrstuvwxyz";
-const ALPHABET_CAPITAL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const NUMBERS = "0123456789";
+const ALPHABET_LOWER = "abcdefghijklmnopqrstuvwxyz";
+const ALPHABET_UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const NUMBERS = "1234567890";
 
 module.exports = function multid(
-  len,
-  settings = { little: true, capital: false, numbers: false }
+  len = 16,
+  settings = { lower: true, upper: true, numbers: true }
 ) {
   let id_order = "";
   let res = "";
-  if (settings.little) id_order += ALPHABET_LITTLE;
-  if (settings.capital) id_order += ALPHABET_CAPITAL;
+  if (settings.lower) id_order += ALPHABET_LOWER;
+  if (settings.upper) id_order += ALPHABET_UPPER;
   if (settings.numbers) id_order += NUMBERS;
 
   for (let i = 0; i < len; i++) {
